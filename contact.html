@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact A11yne Consulting">
+    <meta name="keywords" content="Accessibility, Consulting, Contact, Inclusive Web Design">
+    <title>Contact Us | A11yne Consulting</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Skip to main content link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" aria-label="Home">Home</a></li>
+                <li><a href="services.html" aria-label="Services">Services</a></li>
+                <li><a href="about.html" aria-label="About Us">About Us</a></li>
+                <li><a href="contact.html" aria-label="Contact">Contact</a></li>
+                <li>
+                    <!-- Language Switcher -->
+                    <label for="language-switcher" class="visually-hidden">Select Language</label>
+                    <select id="language-switcher" aria-label="Language switcher">
+                        <option value="en">English</option>
+                        <option value="es">Español</option>
+                        <option value="fr">Français</option>
+                        <option value="zh">中文</option>
+                        <option value="de">Deutsch</option>
+                        <option value="it">Italiano</option>
+                        <option value="et">Eesti</option>
+                        <option value="lv">Latviešu</option>
+                        <option value="lt">Lietuvių</option>
+                        <option value="nl">Nederlands</option>
+                    </select>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <section id="contact">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you! Please fill out the form below and we'll get in touch as soon as possible.</p>
+            <form id="contact-form" action="https://formspree.io/f/{your_form_id}" method="POST"> <!-- need to complete this-->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required aria-required="true">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required aria-required="true">
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 A11yne Consulting. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
